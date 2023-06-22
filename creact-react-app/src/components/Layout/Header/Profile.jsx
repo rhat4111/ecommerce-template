@@ -13,7 +13,7 @@ const Profile = () => {
       className='rounded-full flex items-center justify-center'
       onClick={handleClick}
     >
-      <img src={UserIcon} className='cursor-pointer' />
+      <img src={UserIcon} className='cursor-pointer' alt="user icon" />
     </div>
   </div>
 }

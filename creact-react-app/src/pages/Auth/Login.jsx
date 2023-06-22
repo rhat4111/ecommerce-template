@@ -40,7 +40,12 @@ const Login = () => {
         value={userInfo.email}
         onChange={handleChange}
         name="email"
-        icon={<img src={UserIcon} className='w-10 h-10 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={UserIcon}
+          className='w-10 h-10 opacity-80'
+          alt="user icon"
+        />}
       />
       <TextField
         type="password"
@@ -48,7 +53,12 @@ const Login = () => {
         value={userInfo.password}
         onChange={handleChange}
         name="password"
-        icon={<img src={LockIcon} className='w-8 h-8 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={LockIcon}
+          className='w-8 h-8 opacity-80'
+          alt="lock icon"
+        />}
       />
       <div className='flex items-center justify-between mb-10'>
         <CheckBox

@@ -37,7 +37,12 @@ const Register = () => {
         value={userInfo.name}
         onChange={handleChange}
         name="name"
-        icon={<img src={UserIcon} className='w-10 h-10 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={UserIcon}
+          className='w-10 h-10 opacity-80'
+          alt="user icon"
+        />}
       />
       <TextField
         type="email"
@@ -45,7 +50,12 @@ const Register = () => {
         value={userInfo.email}
         onChange={handleChange}
         name="email"
-        icon={<img src={EmailIcon} className='w-6 h-6 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={EmailIcon}
+          className='w-6 h-6 opacity-80'
+          alt="email icon"
+        />}
       />
       <TextField
         type="password"
@@ -53,7 +63,12 @@ const Register = () => {
         value={userInfo.password}
         onChange={handleChange}
         name="password"
-        icon={<img src={LockIcon} className='w-8 h-8 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={LockIcon}
+          className='w-8 h-8 opacity-80'
+          alt="lock icon"
+        />}
       />
       <TextField
         type="password"
@@ -62,7 +77,11 @@ const Register = () => {
         onChange={handleChange}
         name="confirmPassword"
         className="mb-10"
-        icon={<img src={LockIcon} className='w-8 h-8 opacity-80' />}
+        icon={<img
+          src={LockIcon}
+          className='w-8 h-8 opacity-80'
+          alt="lock icon"
+        />}
       />
       <Button
         className="mb-8"

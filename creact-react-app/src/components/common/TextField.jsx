@@ -14,7 +14,7 @@ const TextField = ({
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
-  return <div className={`mb-6 ${className}`}>
+  return <div className={className}>
     <label htmlFor={id}>{label}</label>
     <div className='flex h-[72px] border border-[#EEE]'>
       {icon && <div className='w-[72px] h-full flex items-center justify-center flex-shrink-0'>
@@ -33,6 +33,7 @@ const TextField = ({
           src={HideIcon}
           className='w-6 h-6 cursor-pointer'
           onClick={() => setShowPassword(!showPassword)}
+          alt="lock icon"
         />
       </div>}
     </div>
