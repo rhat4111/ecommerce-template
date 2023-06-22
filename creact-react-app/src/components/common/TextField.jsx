@@ -26,7 +26,7 @@ const TextField = ({
         name={name}
         value={value}
         onChange={onChange}
-        className={`w-full h-full outline-none pr-5 ${!icon && `pl-5`}`}
+        className={`w-full h-full outline-none placeholder:text-dark pr-5 ${!icon && `pl-5`}`}
       />
       {type === 'password' && <div className='w-[72px] flex items-center justify-center flex-shrink-0'>
         <img
