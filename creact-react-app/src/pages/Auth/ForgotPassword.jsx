@@ -31,7 +31,11 @@ const ForgotPassword = () => {
         onChange={handleChange}
         name="email"
         className="mb-10"
-        icon={<img src={EmailIcon} className='w-6 h-6 opacity-80' />}
+        icon={<img
+          src={EmailIcon}
+          className='w-6 h-6 opacity-80'
+          alt="email icon"
+        />}
       />
       <Button
         className="mb-8"

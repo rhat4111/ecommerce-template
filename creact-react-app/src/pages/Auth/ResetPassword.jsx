@@ -16,7 +16,7 @@ const ResetPassword = () => {
   }
 
   const handleChange = e => {
-    setFormInfo({ ...formInfo, [e.target.value]: e.target.value });
+    setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
   }
 
   return <div className='flex justify-center pt-[100px]'>
@@ -33,7 +33,12 @@ const ResetPassword = () => {
         value={formInfo.password}
         onChange={handleChange}
         name="password"
-        icon={<img src={LockIcon} className='w-8 h-8 opacity-80' />}
+        className="mb-6"
+        icon={<img
+          src={LockIcon}
+          className='w-8 h-8 opacity-80'
+          alt="lock icon"
+        />}
       />
       <TextField
         type="password"
@@ -42,7 +47,11 @@ const ResetPassword = () => {
         onChange={handleChange}
         name="confirmPassword"
         className="mb-10"
-        icon={<img src={LockIcon} className='w-8 h-8 opacity-80' />}
+        icon={<img
+          src={LockIcon}
+          className='w-8 h-8 opacity-80'
+          alt="lock icon"
+        />}
       />
       <Button onClick={handleReset} fullWidth>
         Confirm Password
