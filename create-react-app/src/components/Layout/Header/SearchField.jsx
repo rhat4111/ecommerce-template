@@ -2,7 +2,7 @@ import React from 'react';
 import SearchIcon from 'assets/images/icons/search.svg';
 
 const SearchField = () => {
-  return <div className='w-[400px] h-14 flex rounded-full border border-[#EEE] p-1.5 overflow-hidden'>
+  return <div className='w-[400px] h-14 flex rounded-full border focus-within:border-theme border-[#EEE] p-1.5 overflow-hidden'>
     <input
       type="text"
       placeholder='Search...'
