@@ -9,7 +9,7 @@ env.config();
 const app = express();
 connection();
 
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 app.use("/auth", auth);
 app.use("/users", users);
