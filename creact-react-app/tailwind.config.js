@@ -11,6 +11,9 @@ module.exports = {
       },
       fontFamily: {
         theme: ["Space Grotesk", "sans-serif"]
+      },
+      boxShadow: {
+        card: '0px 10px 40px 0px rgba(0, 0, 0, 0.08)'
       }
     },
   },

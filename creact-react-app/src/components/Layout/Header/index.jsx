@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Cart from './Cart';
 import MenuItem from './MenuItem';
 import Profile from './Profile';
@@ -30,9 +31,9 @@ const Header = () => {
   return <div className='fixed w-full h-20 shadow-md px-5'>
     <div className='max-w-screen-2xl h-full flex justify-between items-center mx-auto'>
       <div className='h-full flex items-center'>
-        <h1 className='font-bold text-4xl text-theme mr-24'>
+        <Link to="/" className='font-bold text-4xl text-theme mr-24'>
           {process.env.REACT_APP_SHOP_NAME}
-        </h1>
+        </Link>
         <ul className='h-full flex -mx-4'>
           {navs.map(nav => <MenuItem key={nav.id} {...nav} />)}
         </ul>
