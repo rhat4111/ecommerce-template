@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import API from 'apis';
 import Button from 'components/common/Button';
 import TextField from 'components/common/TextField';
 import UserIcon from 'assets/images/icons/user.svg';
@@ -16,7 +17,10 @@ const Register = () => {
   });
 
   const handleSignUp = () => {
-    navigate('/login');
+    API.auth.register(userInfo).then(res => {
+      console.log(res)
+    });
+    // navigate('/login');
   }
 
   const handleChange = e => {
