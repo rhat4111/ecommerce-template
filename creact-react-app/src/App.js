@@ -1,8 +1,18 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from 'pages/Home';
+
+import Layout from 'components/Layout';
+
 function App() {
   return (
-    <div className="w-full h-screen flex items-center justify-center text-5xl font-bold">
-      Shopping
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
