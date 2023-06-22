@@ -51,7 +51,7 @@ const Register = () => {
         password: userInfo.password,
       })
       .then((res) => {
-        navigate('/login');
+        navigate("/login");
       });
   };
 
