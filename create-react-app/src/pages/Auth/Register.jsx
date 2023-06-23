@@ -33,11 +33,11 @@ const Register = () => {
       return;
     }
     if (isEmpty(userInfo.password)) {
-      setError({ password: "Password must me a valid email" });
+      setError({ password: "Password is not allowed to be empty" });
       return;
     }
     if (isEmpty(userInfo.confirmPassword)) {
-      setError({ confirmPassword: "Confirm password must me a valid email" });
+      setError({ confirmPassword: "Confirm password is not allowed to be empty" });
       return;
     }
     if (!equals(userInfo.password, userInfo.confirmPassword)) {
